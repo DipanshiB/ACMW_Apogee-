@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="reg+_form_apogee_style.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Include the above in your HEAD tag ---------->
+
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome!</h3>
+                        <p>If you have already registered, please login here to start playing!</p>
+                        <input type="submit" name="" value="Login"/><br/>
+                    </div>
+                    <div class="col-md-9 register-right">
+
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Register here for Game_Name</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="Username" placeholder="User Name *" value="" />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="password" class="form-control" id="Password" placeholder="Password *" value="" />
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="emailid" placeholder="Your Email *" value="" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Your Phone *" value="" />
+                                        </div>
+
+                                        <input type="submit" class="btnRegister"  value="Register"/>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="particles-js"></div>
+<!-- <script>
+  function validateForm()
+  {
+    var password = getElementById("Password").value();
+    var email = getElementById("emailid").value();
+
+    function checkPassword()
+    {
+      if(password == name)
+      {
+        alert("Password cannot be the same as the name!");
+        return false;
+        Password.focus();
+        Name.focus();
+      }
+    }
+
+    function checkEmail(email)
+    {
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if(email.value.match(mailformat))
+      {
+        return true;
+      }
+      else
+      {
+        alert("You have entered an invalid email address!");
+        Email.focus();
+        return false;
+      }
+    }
+  }
+  </script> -->
+
+  <script>
+  $.getScript("https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js", function(){
+      particlesJS('particles-js',
+        {
+          "particles": {
+            "number": {
+              "value": 80,
+              "density": {
+                "enable": true,
+                "value_area": 800
+              }
+            },
+            "color": {
+              "value": "#ffffff"
+            },
+            "shape": {
+              "type": "circle",
+              "stroke": {
+                "width": 0,
+                "color": "#000000"
+              },
+              "polygon": {
+                "nb_sides": 5
+              },
+              "image": {
+                "width": 100,
+                "height": 100
+              }
+            },
+            "opacity": {
+              "value": 0.5,
+              "random": false,
+              "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+              }
+            },
+            "size": {
+              "value": 5,
+              "random": true,
+              "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+              }
+            },
+            "line_linked": {
+              "enable": true,
+              "distance": 150,
+              "color": "#ffffff",
+              "opacity": 0.4,
+              "width": 1
+            },
+            "move": {
+              "enable": true,
+              "speed": 6,
+              "direction": "none",
+              "random": false,
+              "straight": false,
+              "out_mode": "out",
+              "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+              }
+            }
+          },
+          "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+              "onhover": {
+                "enable": true,
+                "mode": "repulse"
+              },
+              "onclick": {
+                "enable": true,
+                "mode": "push"
+              },
+              "resize": true
+            },
+            "modes": {
+              "grab": {
+                "distance": 400,
+                "line_linked": {
+                  "opacity": 1
+                }
+              },
+              "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+              },
+              "repulse": {
+                "distance": 200
+              },
+              "push": {
+                "particles_nb": 4
+              },
+              "remove": {
+                "particles_nb": 2
+              }
+            }
+          },
+          "retina_detect": true,
+          "config_demo": {
+            "hide_card": false,
+            "background_color": "#b61924",
+            "background_image": "",
+            "background_position": "50% 50%",
+            "background_repeat": "no-repeat",
+            "background_size": "cover"
+          }
+        }
+      );
+
+  });
+  </script>
