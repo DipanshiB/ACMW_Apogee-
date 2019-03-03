@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Anonymous+Pro');
 body {
-  background: -webkit-linear-gradient(left, #43cea2, #185a9d);
-  height: 100%;
-  @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+/*background-image: url("https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiPzKT5webgAhURcCsKHemXDK0QjRx6BAgBEAU&url=https%3A%2F%2Fpngtree.com%2Ffreepng%2Ftablet_2309551.html&psig=AOvVaw2GbTZ6x0U8uhpcJu18tWVQ&ust=1551721144585255.jpeg");
+  /*background: -webkit-linear-gradient(left, #43cea2, #185a9d);
   font-family: 'Anonymous Pro', monospace;
   /*font-family: 'tradegothiclt-bold', sans-serif;
   @font-face {
@@ -15,11 +15,12 @@ body {
     font-family: "My Custom Font";
     src: url(https://ff.static.1001fonts.net/g/a/gabriele.bad-ah.ttf) format("truetype");
 } */
+}
+
 
 h1 {
   font-size: 5em;
   color: white;
-  text-transform: uppercase;
 }
 
 span {
